@@ -4,13 +4,16 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     vim \
     git \
     terminator \
-    rviz \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
 RUN wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64' \
     && echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections \
+    # && sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
     && apt-get update && apt-get install -y ./vscode.deb \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN sudo apt update && sudo apt-get install -y ros-noetic-desktop-full \
     && rm -rf /var/lib/apt/lists/*
 
 COPY config/ /site_config/
