@@ -13,7 +13,10 @@ RUN wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&
     && apt-get update && apt-get install -y ./vscode.deb \
     && rm -rf /var/lib/apt/lists/*
 
-RUN sudo apt update && sudo apt-get install -y ros-noetic-desktop-full \
+# For articulated robotics TF tutorial
+RUN sudo apt update && sudo apt-get install -y \
+    ros-noetic-desktop-full \
+    ros-noetic-xacro ros-noetic-joint-state-publisher-gui \
     && rm -rf /var/lib/apt/lists/*
 
 COPY config/ /site_config/
