@@ -18,3 +18,7 @@
 	path = catkin_ws/src/rexrov2
 	url = git@github.com:uuvsimulator/rexrov2.git
 	branch = master
+[submodule "dependencies/uuv_ws/src/uuv_simulator"]
+	path = dependencies/uuv_ws/src/uuv_simulator
+	url = git@github.com:usc-robosub/uuv_simulator.git
+	branch = master
