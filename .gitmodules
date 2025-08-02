@@ -14,10 +14,6 @@
 	path = dependencies/uuv_ws/src/uuv_manipulators
 	url = git@github.com:field-robotics-lab/uuv_manipulators
 	branch = master
-[submodule "dependencies/uuv_ws/src/uuv_simulator"]
-	path = dependencies/uuv_ws/src/uuv_simulator
-	url = git@github.com:usc-robosub/uuv_simulator.git
-	branch = master
 [submodule "catkin_ws/src/rexrov2"]
 	path = catkin_ws/src/rexrov2
 	url = git@github.com:uuvsimulator/rexrov2.git
