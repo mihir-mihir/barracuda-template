@@ -4,7 +4,8 @@
 set -e
 
 # source ros installation
-source /opt/ros/noetic/setup.bash
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 # source /opt/barracuda-template/uuv_ws/devel/setup.bash
 
