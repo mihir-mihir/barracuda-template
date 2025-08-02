@@ -1,0 +1,24 @@
+[submodule "dependencies/uuv_ws/src/ds_msgs"]
+	path = dependencies/uuv_ws/src/ds_msgs
+	url = git@github.com:Field-Robotics-Lab/ds_msgs.git
+	branch = nps_dev
+[submodule "dependencies/uuv_ws/src/ds_sim"]
+	path = dependencies/uuv_ws/src/ds_sim
+	url = git@github.com:Field-Robotics-Lab/ds_sim.git
+	branch = nps_dev
+[submodule "dependencies/uuv_ws/src/eca_a9"]
+	path = dependencies/uuv_ws/src/eca_a9
+	url = git@github.com:uuvsimulator/eca_a9.git
+	branch = master
+[submodule "dependencies/uuv_ws/src/uuv_manipulators"]
+	path = dependencies/uuv_ws/src/uuv_manipulators
+	url = git@github.com:field-robotics-lab/uuv_manipulators
+	branch = master
+[submodule "dependencies/uuv_ws/src/uuv_simulator"]
+	path = dependencies/uuv_ws/src/uuv_simulator
+	url = git@github.com:usc-robosub/uuv_simulator.git
+	branch = master
+[submodule "catkin_ws/src/rexrov2"]
+	path = catkin_ws/src/rexrov2
+	url = git@github.com:uuvsimulator/rexrov2.git
+	branch = master
