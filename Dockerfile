@@ -52,6 +52,8 @@ COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/bin/bash", "/entrypoint.sh"] 
 
-RUN echo "source /opt/ros/noetic/setup.bash" >> /home/ros/.bashrc
+RUN echo "source /opt/ros/noetic/setup.bash" >> /home/ros/.bashrc \
+    && echo "[ -f ~//catkin_ws/devel/setup.bash ] && source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
 
 CMD ["terminator"]
